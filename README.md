@@ -201,7 +201,8 @@ Para realizar cualquier operación, hacer clic derecho sobre una Base de Datos y
 ## Insertar
 
 Para realizar un `INSERT` hay que escribir en el editor:
-> `INSERT INTO nuevo_esquema."nueva-tabla" VALUES (1, 'hola');`
+
+    INSERT INTO esquema."tabla" VALUES (valor-1, valor-n);
 
 ![query-tool_2](/statics/img/pgadmin/query-tool_2.png)
 
