@@ -16,6 +16,8 @@ Tabla de Contenido
       * [Crear Base de Datos](#Crear-Base-de-Datos)
       * [Crear Esquema](#Crear-Esquema)
       * [Crear Tabla](#Crear-Tabla)
+      * [Ejecutar Consultas](#Query-Tool)
+        * [Insertar Datos](#Insertar)
 <!--te-->
 
 Características
@@ -51,7 +53,7 @@ Desplegar
 
 Posicionarse en el directorio donde se descargó el archivo [docker-compose.yml](https://github.com/ivanNieto13/Manual-PostgreSQL-y-PgAdmin/blob/master/statics/yml/docker-compose.yml) y ejecutar en terminal:
 ```console
-user@hostname:~$ docker-compose up -d
+$ docker-compose up -d
 ```
 
 Esperar a que se descargue la imagen y se generen los contenedores.
@@ -184,3 +186,27 @@ En la pestaña **Columns** hacer clic en el ícono de agregar (+), escribir el n
 ![new-table_2](/statics/img/pgadmin/new-table_2.png)
 
 Clic en **Save** para guardar cambios.
+
+Query-Tool
+===
+
+Es una herramienta para ejecutar consultas usando la sintáxis SQL de Postgre.
+
+Se compone de un sencillo editor de texto y herramientas para editar, guardar, exportar y ejecutar el código que escriba en él.
+
+Para realizar cualquier operación, hacer clic derecho sobre una Base de Datos y seleccionar **Query Tool** en el menú desplegable.
+
+![query-tool](/statics/img/pgadmin/query-tool.png)
+
+## Insertar
+
+Para realizar un `INSERT` hay que escribir en el editor:
+> `INSERT INTO nuevo_esquema."nueva-tabla" VALUES (1, 'hola');`
+
+![query-tool_2](/statics/img/pgadmin/query-tool_2.png)
+
+Y hacer clic sobre el botón **Execute/Refresh**. O simplemente presionando `F5` en el teclado.
+
+La consola del editor regresará un mensaje de éxito al ejecutarse correctamente el `INSERT`.
+
+![query-tool_3](/statics/img/pgadmin/query-tool_3.png)
