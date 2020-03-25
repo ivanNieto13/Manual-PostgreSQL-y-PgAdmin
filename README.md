@@ -16,7 +16,7 @@ Tabla de Contenido
       * [Crear Base de Datos](#Crear-Base-de-Datos)
       * [Crear Esquema](#Crear-Esquema)
       * [Crear Tabla](#Crear-Tabla)
-      * [Ejecutar SQL](#Query-Tool)
+      * [Ejecutar SQL con Query Tool](#Query-Tool)
         * [Insertar](#Insertar)
         * [Consultar](#Consultar)
         * [Actualizar](#Actualizar)
