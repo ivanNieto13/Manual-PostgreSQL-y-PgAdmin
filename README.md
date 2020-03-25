@@ -191,6 +191,24 @@ En la pestaña **Columns** hacer clic en el ícono de agregar (+), escribir el n
 
 Clic en **Save** para guardar cambios.
 
+Añadir Llave Foránea
+===
+
+## Pre requisito
+Para añadir una llave foránea se tendrá que tener al menos dos tablas en un esquema.
+
+Hacer clic derecho sobre la Tabla en donde se creará la llave foránea y hacer clic en **Propiedades** al final del menú desplegable.
+
+![fk_1](/statics/img/pgadmin/fk_1.png)
+
+Seguir la ruta **Constraints** -> **Foreign Key** y hacer clic en el botón **Add new row** (+), después en **Edit row** y por último en **Columns**.
+
+Aquí se eligirá una columna local de la tabla en el campo **Local column**, la tabla a la que se hará referencia en el campo **References** y la columna a la que se hará referencia en el campo **Referencing**.
+
+![fk_2](/statics/img/pgadmin/fk_2.png)
+
+Al terminar, hacer clic en el botón **Add new row**. Y para guardar cambios, hacer clic en el botón **Save**.
+
 Query-Tool
 ===
 
