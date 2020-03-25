@@ -16,8 +16,12 @@ Tabla de Contenido
       * [Crear Base de Datos](#Crear-Base-de-Datos)
       * [Crear Esquema](#Crear-Esquema)
       * [Crear Tabla](#Crear-Tabla)
-      * [Ejecutar Consultas](#Query-Tool)
-        * [Insertar Datos](#Insertar)
+      * [Ejecutar SQL](#Query-Tool)
+        * [Insertar](#Insertar)
+        * [Consultar](#Consultar)
+        * [Actualizar](#Actualizar)
+        * [Borrar](#Borrar)
+
 <!--te-->
 
 Características
@@ -211,3 +215,52 @@ Y hacer clic sobre el botón **Execute/Refresh**. O simplemente presionando `F5`
 La consola del editor regresará un mensaje de éxito al ejecutarse correctamente el `INSERT`.
 
 ![query-tool_3](/statics/img/pgadmin/query-tool_3.png)
+
+## Consultar
+
+Para realizar un `SELECT` hay que escribir en el editor:
+
+    SELECT * FROM esquema."tabla";
+
+![query-tool_4](/statics/img/pgadmin/query-tool_4.png)
+
+Y hacer clic sobre el botón **Execute/Refresh**. O simplemente presionando `F5` en el teclado.
+
+Se mostrará una representación gráfica de la tabla con el resultado de los datos consultados.
+
+![query-tool_5](/statics/img/pgadmin/query-tool_5.png)
+
+## Nota: 
+Es posible insertar datos manualmente a la tabla, una vez hecha una consulta.
+Sólo hay que hacer clic en el campo vacío de la tabla, escribir el valor y para guardar cambios presionar el botón **Save Data Changes**. O simplemente presionando `F6` en el teclado.
+
+![query-tool_7](/statics/img/pgadmin/query-tool_7.png)
+
+## Actualizar
+
+Para realizar un `UPDATE` hay que escribir en el editor:
+
+    UPDATE esquema."tabla" SET "columna" = 'viejo valor' WHERE "columna" = 'nuevo valor';
+
+![query-tool_8](/statics/img/pgadmin/query-tool_10.png)
+
+Y hacer clic sobre el botón **Execute/Refresh**. O simplemente presionando `F5` en el teclado.
+
+La consola del editor regresará un mensaje de éxito al ejecutarse correctamente el `UPDATE`.
+
+![query-tool_9](/statics/img/pgadmin/query-tool_11.png)
+
+## Borrar
+
+Para realizar un `DELETE` hay que escribir en el editor:
+
+    DELETE FROM esquema."tabla" WHERE "columna" = valor;
+
+![query-tool_8](/statics/img/pgadmin/query-tool_8.png)
+
+Y hacer clic sobre el botón **Execute/Refresh**. O simplemente presionando `F5` en el teclado.
+
+La consola del editor regresará un mensaje de éxito al ejecutarse correctamente el `DELETE`.
+
+![query-tool_9](/statics/img/pgadmin/query-tool_9.png)
+
